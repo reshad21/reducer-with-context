@@ -1,6 +1,6 @@
 import React from "react";
-// import { BsFillCartFill } from "react-icons/bs";
-// import { IoIosListBox } from "react-icons/io";
+import { BsFillCartFill } from "react-icons/bs";
+import { IoIosListBox } from "react-icons/io";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -19,12 +19,12 @@ const Navbar = () => {
         </li>
         <li title='Wishlist' className='bg-indigo-500 p-2 rounded-full'>
           <Link to='/'>
-            {/* <IoIosListBox className='text-white' /> */}
+            <IoIosListBox className='text-white' />
           </Link>
         </li>
         <li title='cart' className='bg-indigo-500 p-2 rounded-full'>
           <Link to='/cart'>
-            {/* <BsFillCartFill className='text-white ' /> */}
+            <BsFillCartFill className='text-white ' />
           </Link>
         </li>
       </ul>

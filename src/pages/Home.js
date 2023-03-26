@@ -1,6 +1,6 @@
 import React from 'react';
+import ProductCard from '../components/ProductCard';
 import { useProducts } from './../context/ProductProvider';
-import Cart from './Cart';
 
 const Home = () => {
     // console.log(useProducts());
@@ -19,9 +19,9 @@ const Home = () => {
 
 
     return (
-        <div>
+        <div className='grid grid-cols-4 gap-4'>
             {
-                products.map(product => <Cart product={product}></Cart>)
+                products.map(product => <ProductCard product={product}></ProductCard>)
             }
         </div>
     );
